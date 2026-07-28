@@ -47,4 +47,24 @@ class Main{
     }
 }
 
+//printing char
+import java.util.*;
+class Main{
+    public static  void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        char ch = sc.next().charAt(0);
+        System.out.println("The Character at: "+ch);
+    }
+}
+
+// Printing a decimal for  digits
+import java.util.*;
+class Main{
+    public static  void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        float f = sc.nextFloat();
+        System.out.printf("%.2f", f);
+    }
+}
+
 
