@@ -1,6 +1,17 @@
+
+// printing a statement
 public class Main
 {
 	public static void main(String[] args) {
 		System.out.println("cse \"KARE\" students");
+	}
+}
+
+//printing new line using \n
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("cse\n \"KARE\" \nstudents");
+		
 	}
 }
