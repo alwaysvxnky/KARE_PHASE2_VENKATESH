@@ -1,1 +1,82 @@
+//program for pre and post incriment and decriment.
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = a++;
+        int c = b--;
+        int d = --c;
+        int e = d++;
+        int f = e--;
+        System.out.println(f++);
+        System.out.println(a+" "+b+" "+c+" "+d+" "+e+" "+f);
+        
+    }
+}
 
+Output:
+99
+98
+100 98 98 99 97 99
+
+
+//program for conditional statement - if/else.
+public class Main{
+    public static void main(String args[]){
+        if(true)
+        System.out.println("hi");
+        else
+        System.out.println("hello");
+    }
+}
+
+Output:
+hi
+
+
+//program for conditional statement - if/else.
+public class Main{
+    public static void main(String args[]){
+        int n = 3;
+        if(n==4)
+        System.out.println(n+5);
+        else
+        System.out.println(n-8);
+    }
+}
+
+Output:
+-5
+
+
+//program for conditional statement - if/else.
+public class Main{
+    public static void main(String args[]){
+        if(!true)
+        System.out.println(9+5);
+        else
+        System.out.println(5*6/2+10);
+    }
+}
+
+Output:
+25
+
+
+//program for conditional statement - if/else with error.
+public class Main{
+    public static void main(String args[]){
+        if(2+2==4)
+        System.out.print("welcome");
+        System.out.print("update your details");
+        else
+        System.out.println(5*6/2+10);
+    }
+}
+
+Output:
+Main.java:7: error: 'else' without 'if'
+        else
+        ^
+1 error
