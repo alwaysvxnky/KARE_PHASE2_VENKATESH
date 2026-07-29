@@ -124,7 +124,7 @@ public class Main
 		if(num1>=18)
 	        System.out.println("Eligible to vote");
 	    else
-	        System.out.println("Eligible to note vote");
+	        System.out.println("Not Eligible to vote");
 	}
 }
 
