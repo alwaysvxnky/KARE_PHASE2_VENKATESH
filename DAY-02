@@ -189,3 +189,57 @@ public class Main
 	}
 }
 
+/*write a java program 
+
+*/
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner  scanner = new Scanner(System.in);
+		int a = scanner.nextInt();
+		if(a%3==0 && a%5==0)
+	        System.out.println("hihello");
+	    else if(a%3==0)
+	        System.out.println("hi");
+	    else if(a%5==0)
+	        System.out.println("hello");
+	}
+}
+
+
+/*write a java program to check the given is leep year or not
+
+*/
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner  scanner = new Scanner(System.in);
+		int a = scanner.nextInt();
+		if(a%400==0 ||a%4==0 && a%100!=0)
+	        System.out.println("Leap year");
+	    else
+	        System.out.println("not a leap year");
+	}
+}
+
+/*write a java program to check the given railway time is valid or not
+
+*/
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner  scanner = new Scanner(System.in);
+		int hour = scanner.nextInt();
+		int min = scanner.nextInt();
+		int sec = scanner.nextInt();
+		if(hour >= 0 && hour < 24 && min >= 0 && min <= 59 && sec >= 0 && sec <= 59){
+		    System.out.println("VALID");
+		}else{
+		    System.out.println("NOT VALID");
+		}
+	}
+}
+
