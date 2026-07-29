@@ -81,7 +81,7 @@ Main.java:7: error: 'else' without 'if'
         ^
 1 error
 
-//write a java program to prit wheather a number is even or odd
+//write a java program to print whether a number is even or odd
 import java.util.*;
 public class Main
 {
