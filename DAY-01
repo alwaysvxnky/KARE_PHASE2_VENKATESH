@@ -1,5 +1,7 @@
-
+//01
 // printing a statement
+//input                  //output
+//cse "KARE" students    cse "KARE" students
 
 public class Main
 {
@@ -8,7 +10,10 @@ public class Main
 	}
 }
 
+//02
 //printing new line using \n
+//input         //output
+//  \n           \n
 
 public class Main
 {
@@ -18,7 +23,7 @@ public class Main
 	}
 }
 
-
+//03
 //getting input from user
 
 //input             //output
@@ -36,7 +41,10 @@ public class Main
 	}
 }
 
+//04
 // printing float value
+//input          //output
+//456.78978      456.7898
 
 import java.util.*;
 class Main{
@@ -47,7 +55,11 @@ class Main{
     }
 }
 
+//05
 //printing char
+//input          //output
+//VENKATESH       V
+
 import java.util.*;
 class Main{
     public static  void main(String args[]){
@@ -57,6 +69,8 @@ class Main{
     }
 }
 
+
+//06
 // Printing a decimal for  digits
 import java.util.*;
 class Main{
@@ -67,6 +81,7 @@ class Main{
     }
 }
 
+//07
   //write java program to print double input from user and printed
 import java.util.*;
 class Main{
