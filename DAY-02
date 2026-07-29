@@ -143,3 +143,24 @@ public class Main
 	        System.out.println("not divivsible by 3 and remainder is "+num1%3);
 	}
 }
+
+
+//write a java program to check the which number is greater from given two numbers
+//input     output
+//12 10         12 is Greater
+//3 56        56 is greater
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner  scanner = new Scanner(System.in);
+		int num1 = scanner.nextInt();
+		int num2 = scanner.nextInt();
+		
+		
+		if(num1>num2)
+	        System.out.println(num1+" IS GREATER");
+	    else if(num1<num2)
+	        System.out.println(num2+" IS GREATER");
+	}
+}
