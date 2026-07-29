@@ -126,3 +126,20 @@ public class Main
 	}
 }
 
+//write a java program to check the given person ages eligible to vote or not
+//input     output
+//9         divisble by 3
+//11        not divivsible by 3 and remainder is 2
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner  scanner = new Scanner(System.in);
+		int num1 = scanner.nextInt();
+		
+		if(num1/3==0)
+	        System.out.println("divisble by 3");
+	    else
+	        System.out.println("not divivsible by 3 and remainder is "+num1%3);
+	}
+}
