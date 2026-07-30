@@ -435,6 +435,24 @@ public class Main
 	}
 }
 
+// write a java program to print the multiplication table
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		//int f=sc.nextInt();
+		int s= sc.nextInt();
+		int e = sc.nextInt();
+	    int i;
+		for( i=1;i<=e;i++)
+		  System.out.println(i+"*"+s+"="+s*i); // System.out.println("%d * %d = %d\n",i,t,i*t);
+	}
+}
+
+
+
+
 
 
 
