@@ -1,5 +1,25 @@
 //program for pre and post incriment and decriment.
 import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt(); //a=29
+		int b,c,d,e;
+		
+		 b=a++;
+		 c=--b;
+		 d=c++;
+		 e=++d;
+		 System.out.println(a + " "+ b+" "+c+" "+d+" "+e);
+			
+	}
+}
+
+//output
+// 30 28 29 29 29
+
+import java.util.*;
 public class Main{
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
