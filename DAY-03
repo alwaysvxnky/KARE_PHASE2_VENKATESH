@@ -385,4 +385,22 @@ public class Main
 	}
 }
 
+// write a java program  TO FIND THE SUM OF ELEMENTS IN THE GIVEN RANGE - input starting range and ending range
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		int j=sc.nextInt();
+		int n= sc.nextInt();
+	    int i;
+	    int sum=0;
+		for( i=j;i<=n;i++){
+		    sum = sum+i; // sum += i;
+		}
+		System.out.println(sum);
+	}
+}
+
+
 
