@@ -65,3 +65,25 @@ public class Solution {
             System.out.println("Negative");
     }
 }
+
+//C-L0-MOD2-Conditional-Challenge-4
+//Write a C program to check the number is divisible by 3 or not using conditional construct.
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner  scanner = new Scanner(System.in);
+        int num1 = scanner.nextInt();
+        
+        if(num1%3==0)
+            System.out.println("The number is divisible by 3");
+        else
+            System.out.println("The number is not divisible by 3 and gives a remainder "+num1%3);
+    }
+}
