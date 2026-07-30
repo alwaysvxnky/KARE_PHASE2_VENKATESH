@@ -1,1 +1,22 @@
+// C-L0-MOD2-Conditional-Challenge-1
+//Write a java program to check the values are equal or not
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
 
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner obj = new Scanner(System.in);
+        int a = obj.nextInt();
+        int b =obj.nextInt();
+        if(a==b)
+            System.out.println("EQUAL");
+        else
+            System.out.println("NOT EQUAL");
+            
+    }
+}
