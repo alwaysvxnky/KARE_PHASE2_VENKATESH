@@ -366,4 +366,23 @@ public class Main
 	}
 }
 
+//LOOPS - ENTRY CONTROL LOOP 
+//FOR LOOP
+
+// write a java program to print n natural numbers
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		int n= sc.nextInt();
+	    int i;
+		for( i=1;i<=n;i++){
+		    System.out.println(i);
+		    
+		}
+		
+	}
+}
+
 
