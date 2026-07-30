@@ -298,3 +298,33 @@ public class Solution {
         }
     }
 }
+
+
+
+
+*******************************************************************************/
+//write a java program for getting respective department name based on given input
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		 Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        switch(a) {
+          
+            case 1:
+                System.out.println("CSE");
+                break;
+            case 2:
+                System.out.println("ECE");
+                break;
+            case 3:
+                System.out.println("EEE");
+                break;
+            default:
+                System.out.println("Invalid");
+        }
+		
+	}
+}
+
