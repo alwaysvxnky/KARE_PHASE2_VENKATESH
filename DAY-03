@@ -402,5 +402,45 @@ public class Main
 	}
 }
 
+// write a java program  TO FIND THE factors of given number
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		//int f=sc.nextInt();
+		int n= sc.nextInt();
+	    int i;
+		for( i=1;i<=n/2;i++)
+		    if(n%i==0)
+		        System.out.println(i);
+		System.out.println(n);
+	}
+}
+
+// write a java program to find the factorial of given number
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		//int f=sc.nextInt();
+		int n= sc.nextInt();
+		int factorial=1;
+	    int i;
+		for( i=1;i<=n;i++)
+		    factorial *=i; 
+		  
+	    System.out.println(factorial);
+	}
+}
+
+
+
+
+
+
+
+
 
 
