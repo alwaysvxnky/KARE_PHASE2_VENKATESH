@@ -330,6 +330,7 @@ public class Main
 
 
 //write a java program to calculate 2 nunbers using conditional statement
+
 import java.util.*;
 public class Main
 {
@@ -339,8 +340,7 @@ public class Main
 		 int b = sc.nextInt();
         char ch = sc.next().charAt(0);
         
-        switch(ch) {
-          
+        switch(ch) { 
             case '+':
                 System.out.println(a+b);
                 break;
@@ -351,7 +351,10 @@ public class Main
                 System.out.println(a*b);
                 break;
             case '/':
-                System.out.println(a/b);
+                if(b!=0)
+                    System.out.println(a/b);
+                else
+                    System.out.println("Undefined");
                 break;
             case '%':
                 System.out.println(a%b);
@@ -362,4 +365,5 @@ public class Main
 		
 	}
 }
+
 
