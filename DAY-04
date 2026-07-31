@@ -112,4 +112,30 @@ public class Main
 		}
 	}
 }
+// COMBINATION OF BASE 1 AND 2
+// 2 COMBOOS SO WE TAKE 2 FOR LOOPS IN MAIN FOR LOOP
+// FIRST IT IS BASE 2 . SO WE GIVE BASE 3 CONDITION AFTER BASE 1 CONDITION
+//output
+// * * * * *
+//   * * * * *
+//     * * * * *
+//       * * * * *
+//         * * * * *
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc =  new Scanner(System.in);
+		int n =sc.nextInt();
+		int row,col;
+		for(row=0;row<n;row++,System.out.println()){
+		    for(col=0;col<=row-1;col++)
+		        System.out.print(" ");
+		    for(col=0;col<n;col++)
+		        System.out.print("*");
+		}
+	}
+}
+
 
