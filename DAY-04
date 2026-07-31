@@ -22,6 +22,11 @@ public class Main
 }
 
 //BASE 2 PATTERN
+// *
+// * *
+// * * *
+// * * * *
+// * * * * *
 
 import java.util.*;
 public class Main
