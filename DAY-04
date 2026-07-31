@@ -43,3 +43,73 @@ public class Main
 	}
 }
 
+//BASE 3 PATTERN (54321)
+// * * * * *
+// * * * *
+// * * *
+// * *
+// *
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc =  new Scanner(System.in);
+		int n =sc.nextInt();
+		int row,col;
+		for(row=0;row<n;row++,System.out.println()){
+		    for(col=0;col<n-row;col++)
+		        System.out.print("*");
+		}
+	}
+}
+
+//BASE 4 PATTERN (01357)
+//OUTPUT
+
+// *
+// * * *
+// * * * * *
+// * * * * * * *
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc =  new Scanner(System.in);
+		int n =sc.nextInt();
+		int row,col;
+		for(row=0;row<n;row++,System.out.println()){
+		    for(col=0;col<2*row-1;col++)
+		        System.out.print("*");
+		}
+	}
+}
+
+
+// COMBINATION OF BASE 1 AND 3 
+// 2 COMBOOS SO WE TAKE 2 FOR LOOPS IN MAIN FOR LOOP
+// FIRST IT IS BASE 3 . SO WE GIVE BASE 3 CONDITION AFTER BASE 1 CONDITION
+//OUTPUT
+//        * * * * *
+//      * * * * *
+//    * * * * *
+//  * * * * *
+//* * * * *
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc =  new Scanner(System.in);
+		int n =sc.nextInt();
+		int row,col;
+		for(row=0;row<n;row++,System.out.println()){
+		    for(col=0;col<n-row-1;col++)
+		        System.out.print(" ");
+		    for(col=0;col<n;col++)
+		        System.out.print("*");
+		    
+		}
+	}
+}
+
