@@ -141,6 +141,40 @@ public class Main
 // COMBINATION OF BASE 2 , 3,  2
 // 3 COMBOOS SO WE TAKE 3 FOR LOOPS IN MAIN FOR LOOP
 // FIRST IT IS BASE 2 . SO WE GIVE BASE 2 CONDITION AFTER BASE 3 CONDITION AGAIN AFTER BASE 2
+//OUTPUT
+// *         *
+// * *       * *
+// * * *     * * *
+// * * * *   * * * *
+// * * * * * * * * * *
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc =  new Scanner(System.in);
+		int n =sc.nextInt();
+		int row,col;
+		for(row=0;row<n;row++,System.out.println()){
+		    for(col=0;col<=row;col++)
+		        System.out.print("*");
+		    for(col=0;col<n-row-1;col++)
+		        System.out.print(" ");
+		    for(col=0;col<=row;col++)
+		        System.out.print("*");
+		   
+		}
+	}
+}
+
+// COMBINATION OF BASE 2 , 3,3,  2
+// 4 COMBOOS SO WE TAKE 4 FOR LOOPS IN MAIN FOR LOOP
+// FIRST IT IS BASE 2 . SO WE GIVE BASE 2 CONDITION AFTER BASE 3 CONDITION AGAIN BASE 3 AND AGAIN AFTER BASE 2
+//OUTPUT
+// *                 *
+// * *             * *
+// * * *         * * *
+// * * * *     * * * *
+// * * * * * * * * * *
 
 import java.util.*;
 public class Main
@@ -152,6 +186,8 @@ public class Main
 		for(row=0;row<n;row++,System.out.println()){
 		    for(col=0;col<=row;col++)
 		        System.out.print("*");
+		    for(col=0;col<n-row-1;col++)
+		        System.out.print(" ");
 		    for(col=0;col<n-row-1;col++)
 		        System.out.print(" ");
 		    for(col=0;col<=row;col++)
