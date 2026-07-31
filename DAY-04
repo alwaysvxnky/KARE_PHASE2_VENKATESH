@@ -471,4 +471,35 @@ public class Main
 	}
 }
 
+//output
+5
+1
+24
+135
+2468
+13579
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int row,col;
+        int count;
+		for(row=0; row<5; row++,System.out.println()) {
+		    if(row%2==0)
+		        count=1;
+		    else
+		        count=2;
+			for(col=0; col<=row; col++) {
+				System.out.print(count);
+				count+=2;
+				}
+		}
+	}
+}
+
+
 
