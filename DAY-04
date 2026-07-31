@@ -347,11 +347,11 @@ public class Main
 
 //output
 //5
-//01234
-//0123
-//012
-//01
-//0
+//54321
+//5432
+//543
+//54
+//5
 
 import java.util.*;
 
@@ -363,11 +363,37 @@ public class Main
 	    int row,col;
 	    for(row=0;row<n;row++,System.out.println()){
 	        for(col=0;col<n-row;col++){
-	            System.out.print(col);
+	            System.out.print(n-col);
 	        }
 	    }
 	}
 }
+
+//output
+5
+12345
+1234
+123
+12
+1
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    int n = sc.nextInt();
+	    int row,col;
+	    
+	    for(row=0;row<n;row++,System.out.println()){
+	        for(col=0;col<n-row;col++){
+	            System.out.print(col+1);
+	        }
+	    }
+	}
+}
+
 
 
 
