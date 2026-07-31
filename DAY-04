@@ -298,6 +298,28 @@ public class Main
 	}
 }
 
+//output
+//11111
+//22222
+//33333
+//44444
+//55555
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    int n = sc.nextInt();
+	    int row,col;
+	    for(row=0;row<n;row++,System.out.println()){
+	        for(col=0;col<n;col++){
+	            System.out.print(row+1);
+	        }
+	    }
+		
+	}
+}
 
 
 
