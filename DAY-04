@@ -197,4 +197,38 @@ public class Main
 	}
 }
 
+// COMBINATION OF 2 AND 3
+// BUT HERE THERE TOP ONE BASE(2) AND BOTTOM ONE BASE(3) SO WE HAVE TO USE 2 FOR LOOPS FOR "ROW"
+//FIRST ONE IS BASE 2 SO AND NEXT FOR  BASE 3
+//OUTPUT
+//5
+//*
+//**
+//***
+//****
+//*****
+//****
+//***
+//**
+//*
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc =  new Scanner(System.in);
+		int n =sc.nextInt();
+		int row,col;
+		for(row=0;row<n-1;row++,System.out.println()){ //BASE 2 - TOP
+		    for(col=0;col<=row;col++)
+		        System.out.print("*");
+		}
+		for(row=0;row<n;row++,System.out.println()){ // BASE 3 -BOTTOM
+		    for(col=0;col<n-row;col++)
+		        System.out.print("*");
+		}
+	}
+}
+
+
 
