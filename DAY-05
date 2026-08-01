@@ -115,4 +115,30 @@ public class Main
     }
 }
 
+5
+CCCCC
+C    
+C    
+C    
+CCCCC
+
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int row,col;
+		for(row=0;row<n;row++,System.out.println()){
+		    for(col=0;col<n;col++){
+		        if(row==0 || col == 0 || row ==n-1 )
+		            System.out.print("C");
+		        else
+		            System.out.print(" ");
+		    }
+		}
+	}
+}
+
 
