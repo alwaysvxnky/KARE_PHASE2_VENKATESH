@@ -61,3 +61,31 @@ public class Main
 	}
 }
 
+//OUTPUT
+//5
+// 10101
+// 01010
+// 10101
+// 01010
+// 10101
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int row,col;
+		for(row=0; row<n; row++,System.out.println()) {
+		    for(col=0; col<n; col++){
+		        if((row+col)%2==0 )
+		        System.out.print("1");
+		    else//else if ((row+col)%2!=0)
+		        System.out.print("0");
+		    }
+		}
+	}
+}
+
+
+
