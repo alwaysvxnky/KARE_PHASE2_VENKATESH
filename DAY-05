@@ -115,6 +115,7 @@ public class Main
     }
 }
 
+//OUTPUT
 5
 CCCCC
 C    
@@ -140,5 +141,33 @@ public class Main
 		}
 	}
 }
+
+//OUTPUT
+5
+EEEEE
+E    
+EEEEE
+E    
+EEEEE
+
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int row,col;
+		for(row=0;row<n;row++,System.out.println()){
+		    for(col=0;col<n;col++){
+		        if(row==0 || col == 0 || row ==n-1 || row%2==0)
+		            System.out.print("E");
+		        else
+		            System.out.print(" ");
+		    }
+		}
+	}
+}
+
 
 
