@@ -137,5 +137,37 @@ public class Main
 		}
 }
 
+//write a java program to check the given number is harshed number or not 
+
+//step1: get the user iput n=18
+//step2:find the sum of digits sum=9 1+8=9
+//step3:to check the given number completely divisible by sum of digits 18%9==0 if it is true prinnt harshed number
+18
+Harshed number
+
+
+
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc =new Scanner(System.in);
+        int n =  sc.nextInt();
+        int temp=n,d,total=0;
+        
+        while(n!=0){
+            d=n%10;
+            total= total+d;
+            n=n/10;
+            
+        }
+        if(temp%total==0)
+        System.out.println("Harshed number");
+        else 
+            System.out.println("not a harshed number");
+    }
+}
+
+
+
 
 
