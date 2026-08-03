@@ -167,6 +167,35 @@ public class Main{
     }
 }
 
+//write a java program to check the given number is neon number or not 
+
+//step1: get the user iput n=9
+//step2:find the square of n = 9^2=81
+//step3:sume of digits 8+1=9
+//step 4: the given number ,n and sum of each digit in a square value both are equal it is consider as neon number
+
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc =new Scanner(System.in);
+        int n =  sc.nextInt();
+        int temp=n,d,total=0;
+        int square=n*n;
+        while(square!=0){
+            
+            d=square%10;
+            total= total+d;
+            square=square/10;
+            
+        }
+        if(temp==total)
+            System.out.println("NEON number");
+        else 
+            System.out.println("not a NEON number");
+    }
+}
+
+
 
 
 
