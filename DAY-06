@@ -41,3 +41,31 @@ public class Main
 	}
 }
 
+//WRITE  A JAVA PROGRAM TO COUNT THE ODD, EVEN DIGITS IN GIVEN NUMBERS
+66652
+Even Numbers Count : 4
+Odd Numbers Count : 1
+
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int d,odd=0,even=0;
+		while(n!=0){
+		    d=n%10;
+		    if(d%2==0){
+		        even++;
+		    }else{
+		        odd++;
+		    }
+		    n=n/10;
+		}
+		System.out.println("Even Numbers Count : "+even);
+		System.out.println("Odd Numbers Count : "+odd);
+	}
+}
+
+
