@@ -113,5 +113,29 @@ public class Main
 	}
 }
 
+//WRITE  A JAVA PROGRAM TO REVERSE THE NUMBER WITHOUT USING RIGHT SIDE FORMATION
+3663
+Palindrom Number
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int d,temp=n,ans=0;
+		while(n!=0) {
+			d=n%10;
+			ans=ans*10+d;
+			n=n/10;
+	}
+	if(temp==ans) {
+				System.out.print("Palindrom Number");
+			} else {
+                 System.out.print("Not a Palindrom Number");
+			}
+		}
+}
+
 
 
