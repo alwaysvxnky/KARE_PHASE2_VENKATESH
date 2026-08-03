@@ -195,6 +195,36 @@ public class Main{
     }
 }
 
+//write a java program to check the given number is perfect number or not 
+
+//step1: get the user input n=6
+//step2:find the factor of n including 1 excluding the given number
+//step3:find the sum of factors 1+2+3=6
+//step 4: compare sum and given number if both are equal print  perfect number
+6
+Perfect number
+
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc =new Scanner(System.in);
+        int n =  sc.nextInt();
+        int total=0;
+        for(int i=1;i<=n/2;i++){
+            if(n%i==0){
+                total +=i;
+                
+            }
+        }
+        if(n==total)
+            System.out.println("Perfect number");
+        else 
+            System.out.println("not a perfect number");
+    }
+}
+
+
+
 
 
 
