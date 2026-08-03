@@ -68,3 +68,29 @@ public class Main
 }
 
 
+//WRITE  A JAVA PROGRAM TO COUNT THE PRIME DIGITS IN THE GIVEN NUMBER
+7583543
+PRIME DIGITS Count : 5
+
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int d,PRIME=0;
+		while(n!=0){
+		    d=n%10;
+		    if(d==2 || d==3|| d==5 || d==7){
+		        PRIME++;
+		    }
+		    n=n/10;
+		}
+		System.out.println("PRIME DIGITS Count : "+PRIME);
+	
+	}
+}
+
+
+
