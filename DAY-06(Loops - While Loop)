@@ -93,4 +93,25 @@ public class Main
 }
 
 
+//WRITE  A JAVA PROGRAM TO REVERSE THE NUMBER WITHOUT USING RIGHT SIDE FORMATION
+5467567
+7657645
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int d,PRIME=0;
+		while(n!=0){
+		    d=n%10;
+		    System.out.print(d);
+		    n=n/10;
+		}
+		
+	}
+}
+
+
 
