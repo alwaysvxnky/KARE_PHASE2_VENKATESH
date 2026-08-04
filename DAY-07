@@ -75,3 +75,51 @@ public class Main
 	    }
 	}
 }
+
+
+// Adam Number
+// write a java program to check the given number is adam number or not 
+// 1. get the inout from the user n = 12
+// 2. find the square of the given number n*n=12*12=144
+// 3. find the reverse of the given number reverse number =21
+// 4. find the suare of reverse number = 441
+// 5.reverse the square of reverse number 
+// 6. compare square of number and square of reverse number  144==144
+// 7. if both are equal print adam number
+
+Common Examples of Adam Numbers
+Some Adam numbers up to 1000 include:
+0, 1, 2, 3, 11, 12, 13, 21, 22, 31, 101, 102, 103, 111, 112, 113, 121, 122, 201, 202, 211, 212, 221, 301, 311
+
+301
+Adam NUMBER
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    int n = sc.nextInt();
+	    int d1,d2,ans=0,ans2=0;
+	    int square=n*n;
+	    int square2=1;
+	    while(n!=0){
+	        d1=n%10;
+	        ans=ans*10+d1;
+	        n=n/10;
+	    }
+	    square2= ans*ans;
+	    while(square2 != 0){
+	        d2=square2%10;
+	        ans2=ans2*10+d2;
+	        square2=square2/10;
+	     }
+	    if(square==ans2){
+	        System.out.println("Adam NUMBER");
+	    }else{
+	        System.out.println("NOT A Adam NUMBER");
+	    }
+		
+	}
+}
+
