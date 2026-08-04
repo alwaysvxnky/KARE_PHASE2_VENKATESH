@@ -119,7 +119,48 @@ public class Main
 	    }else{
 	        System.out.println("NOT A Adam NUMBER");
 	    }
+	}
+}
+
+
+// AMICABLE PAIR - (220, 284)  (1184, 1210) (2620, 2924) (5020, 5564) (6232, 6368)
+// write a java program to check the given number is adam number or not 
+// 1. get the 2 NUMBERS inPut from the user n1=220;n2=284
+// 2. find the factors of n1 , find the sum of factors of n1 . s1
+// 3. find the sum of factors of n2 = s2
+// 4. compare s1==n2 && s2==n1 if conditionis true print amicable pair
+
+1184
+1210
+Amicable NUMBER
+
+
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    int n1 = sc.nextInt();
+	    int n2 = sc.nextInt();
+	    int s1=0,s2=0;
+	    for(int i=1;i<n1;i++){
+	       if(n1%i==0){
+	           s1=s1+i;
+	            }
+	        }
+	    for(int i =1;i<n2;i++){
+	       if(n2%i==0){
+	           s2=s2+i;
+	            }
+	        }
+	    if(s1==n2 && s2==n1){
+	        System.out.println("Amicable NUMBER");
+	    }else{
+	        System.out.println("NOT A Amicable NUMBER");
+	    }
 		
 	}
 }
+
 
