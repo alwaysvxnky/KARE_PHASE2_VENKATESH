@@ -78,3 +78,37 @@ public class Main
 	   System.out.println("Odd Element Count in Array : " +odd);
 	}
 }
+//WRITE A JAVA PROGRAM TO REPLACE A VALUE IN ARRAY
+Enter array size: 5
+Enter array elements:
+1 2 3 4 5
+Enter index to replace: 4
+Enter new value: 6
+Updated array:
+1 2 3 4 6 
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter array size: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter array elements:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        System.out.print("Enter index to replace: ");
+        int index = sc.nextInt();
+        System.out.print("Enter new value: ");
+        int value = sc.nextInt();
+        if (index >= 0 && index < n) {
+            arr[index] = value;
+        } else {
+            System.out.println("Invalid index!");
+        }
+        System.out.println("Updated array:");
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
