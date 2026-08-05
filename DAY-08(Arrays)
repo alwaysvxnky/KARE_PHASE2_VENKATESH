@@ -41,3 +41,40 @@ public class Main
 	   System.out.println("Sum of Array Elements : "+sum);
 	}
 }
+
+
+//write a java program to find the odd even element count in te given array
+// input             output
+// 5
+// 10 2 34 5 23       old element count =2
+//                   even element count =3
+
+5
+10 2 34 5 23
+Even Element Count in Array : 3
+Odd Element Count in Array : 2
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int n=sc.nextInt();
+	    int even=0,odd=0;
+	    int arr[]= new int[n];
+	    int i;
+	    for(i=0;i<n;i++){
+	        arr[i]=sc.nextInt();
+
+	    }
+	    for(i=0;i<n;i++){
+	        if(arr[i]%2==0){
+	            even++;
+	        }else{
+	            odd++;
+	        }
+	    }
+	   System.out.println("Even Element Count in Array : "+even);
+	   System.out.println("Odd Element Count in Array : " +odd);
+	}
+}
