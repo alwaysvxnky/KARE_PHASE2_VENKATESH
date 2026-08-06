@@ -153,6 +153,28 @@ public class Main {
     }
 }
 
+5
+1 2 3 4 5
+1
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] nums = new int[n];
+        int i;
+        int largest=Integer.MAX_VALUE;
+      
+        for ( i = 0; i < n; i++) {
+            nums[i] = sc.nextInt();
+            if(largest>nums[i]){
+                largest=nums[i];
+            }
+        }
+        System.out.print(largest);
+    }
+}
+
 
 
 
