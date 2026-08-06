@@ -176,6 +176,38 @@ public class Main {
 }
 
 
+5
+54 56 74 53 53
+56
+
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] nums = new int[n];
+        int i;
+        int largest=Integer.MIN_VALUE;
+        int sL=Integer.MIN_VALUE;
+        for ( i = 0; i < n; i++) {
+            nums[i] = sc.nextInt();
+            if(largest<nums[i]){
+                sL=largest;
+                largest=nums[i];
+            }else if (nums[i]>sL && nums[i]!=largest){
+                sL=nums[i];
+            }
+        }
+        if(sL==Integer.MIN_VALUE){
+            System.out.println("No Second Largest Integer");
+        }else{
+            System.out.println(sL);
+        }
+    }
+}
+
+
 
 
 
