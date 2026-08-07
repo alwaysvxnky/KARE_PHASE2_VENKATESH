@@ -1,0 +1,36 @@
+//write a java to create and display a 2D array
+Enter no of rows : 
+2
+Enter no of rows : 
+2
+Enter elements of Array : 
+1 2 3 4
+Elements in the Array : 
+1 2 
+3 4 
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter no of rows : ");
+        int row = sc.nextInt();
+        System.out.println("Enter no of rows : ");
+        int col = sc.nextInt();
+        int arr[][]=new int[row][col];
+        System.out.println("Enter elements of Array : ");
+        for(int i=0;i<row;i++){
+            for(int j=0;j<col;j++){
+                arr[i][j] = sc.nextInt();
+            }
+        }
+        System.out.println("Elements in the Array : ");
+        for(int i=0;i<row;i++){
+            for(int j=0;j<col;j++){
+              System.out.print(arr[i][j]+" ");
+            }
+            System.out.println();
+        }
+        
+    }
+}
