@@ -223,3 +223,27 @@ public class Main {
         System.out.println(c);
     }
 }
+
+//write the java programe to find the vowels count in the given string
+yknev
+venky
+
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str=sc.nextLine();
+        char ch[] =str.toCharArray();
+        int s=0;
+        int e=ch.length-1;
+        while(s<e){
+            char temp = ch[s];
+            ch[s] = ch[e];
+            ch[e]=temp;
+            s++;
+            e--;
+        }
+        System.out.println(new String(ch));
+    }
+}
