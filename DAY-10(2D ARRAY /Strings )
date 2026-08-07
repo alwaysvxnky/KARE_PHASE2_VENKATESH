@@ -163,3 +163,20 @@ public class Main {
         }   
     }
 }
+
+
+//write the java programe to print length of string without using inbuilt function/method
+venkatesh
+9
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s=sc.nextLine();
+        int c=0;
+        for(char ch:s.toCharArray())
+            c++;
+        System.out.print(c);        
+    }
+}
