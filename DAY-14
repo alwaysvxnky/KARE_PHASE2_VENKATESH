@@ -95,3 +95,28 @@ class Main{
         
     } 
 }
+
+//output
+20 6.66 v
+20 6.66
+6.66 v
+
+import java.util.*;
+class Main{
+    void add(int a,float b){
+        System.out.println(a+" "+b);
+    }
+    void add(float b,char c){
+        System.out.println(b+" "+c);
+    }
+    public static void main(String args[]){
+        Scanner obj=new Scanner(System.in);
+        int a=obj.nextInt();
+        float b=obj.nextFloat();
+        char c=obj.next().charAt(0);
+        Main m=new Main();
+        m.add(a,b);
+        m.add(b,c);
+        
+    } 
+}
