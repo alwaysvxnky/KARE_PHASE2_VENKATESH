@@ -146,3 +146,41 @@ class Main{
         
     } 
 }
+
+
+//output
+4 6.66 v 3.3333
+4 6.66
+4 6.66
+v 3.3333
+3.3333 v
+
+import java.util.*;
+class Main{
+    void add(int a,float b){
+        System.out.println(a+" "+b);
+    }
+    void add(float a,int b){
+        System.out.println(b+" "+a);
+    }
+    void print(char c, double d){
+        System.out.println(c+" "+d);
+    }
+    void print(double c,char d){
+        System.out.println(c+" "+d);
+    }
+    
+    public static void main(String args[]){
+        Scanner obj=new Scanner(System.in);
+        int a=obj.nextInt();
+        float b=obj.nextFloat();
+        char c=obj.next().charAt(0);
+        double d=obj.nextDouble();
+        Main m=new Main();
+        m.add(a,b);
+        m.add(b,a);
+        m.print(c,d);
+        m.print(d,c);
+        
+    } 
+}
