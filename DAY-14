@@ -120,3 +120,29 @@ class Main{
         
     } 
 }
+
+
+//output
+30 6.666
+30 6.666
+6.666 30
+
+import java.util.*;
+class Main{
+    void add(int a,float b){
+        System.out.println(a+" "+b);
+    }
+    void add(float b,int a){
+        System.out.println(b+" "+a);
+    }
+    
+    public static void main(String args[]){
+        Scanner obj=new Scanner(System.in);
+        int a=obj.nextInt();
+        float b=obj.nextFloat();
+        Main m=new Main();
+        m.add(a,b);
+        m.add(b,a);
+        
+    } 
+}
