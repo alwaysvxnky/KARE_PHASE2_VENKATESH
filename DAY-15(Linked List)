@@ -48,3 +48,57 @@ public class Main
 	    }
 	}
 }
+
+1 2 3 4 5 -1
+1 2 3 4 5 
+Sum of elements: 15
+import java.util.*;
+class Node{
+    int data;
+    Node next;
+    Node(int d){
+        this.data=d;
+        this.next=null;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner obj=new Scanner(System.in);
+		Main m=new Main();
+		int d=obj.nextInt();
+		while(d!=-1){
+		    m.insert(d);
+		    d=obj.nextInt();
+		}
+		m.display();
+	}
+	Node first;
+	void insert(int d){
+	      Node n =new Node(d);
+	      if(first==null){
+	      first=n;
+	      return;
+	      }else{
+	          Node temp = first;
+	          while(temp.next !=null){
+	              temp=temp.next;
+	          }
+	          temp.next=n;
+	      }
+	}
+	void display(){
+	    if(first==null){
+	        System.out.println("List is empty");
+	        return;
+	    }
+	    Node temp=first;
+	    int sum=0;
+	    while(temp!=null){
+	       sum=sum+temp.data;
+	       System.out.print(temp.data + " ");
+	       temp=temp.next;
+	    }
+	    System.out.print("\nSum of elements: "+sum);
+	}
+}
