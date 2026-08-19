@@ -160,3 +160,57 @@ public class Main
 }
 
 
+//Sum of Elements in  Circular Singly Linked List
+1 2 3 4 6 -1
+Sum of the elements: 16
+
+import java.util.*;
+class Node{
+    int data;
+    Node next;
+    Node(int d){
+        this.data=d;
+        this.next=null;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner obj = new Scanner(System.in);
+		Main m=new Main();
+		int d =  obj.nextInt();
+		while(d!=-1){
+		    m.insert(d);
+		    d=obj.nextInt();
+		}
+		m.sum();
+	}
+    Node first = null;
+	void insert(int d){
+	      Node n =new Node(d);
+	      if(first==null){
+	      first=n;
+	      n.next=first;
+	      }else{
+	          Node temp = first;
+	          while(temp.next !=first){
+	              temp=temp.next;
+	          }
+	          temp.next = n;
+              n.next = first;
+	      }
+	}
+	void sum(){
+	    if(first==null){
+	        System.out.println("List is empty");
+	    }
+	    int sum=0;
+	    Node temp=first;
+	    do{
+	        sum=sum + temp.data;
+	        temp =temp.next;
+	    }while(temp !=first);
+	    System.out.println("Sum of the elements: "+sum);
+	}
+}
+
