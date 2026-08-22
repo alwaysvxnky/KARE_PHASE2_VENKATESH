@@ -1,3 +1,4 @@
+//01
 import java.util.*;
 class Stack {
         int top;
@@ -106,6 +107,8 @@ Invalid4
 Exit
 
 
+
+//02
 Queue with array
 import java.util.*;
 class Queue {
@@ -228,3 +231,411 @@ Output:
 3.Display
 4.exit
 4
+
+
+//==================== STACK ====================
+
+//03
+// Stack using Array - Push
+
+import java.util.*;
+
+class Stack1 {
+    int top = -1;
+    int arr[];
+
+    Stack1(int n) {
+        arr = new int[n];
+    }
+
+    void push(int d) {
+        if(top == arr.length-1) {
+            System.out.println("Stack Overflow");
+            return;
+        }
+        arr[++top] = d;
+    }
+
+    void display() {
+        if(top == -1) {
+            System.out.println("Stack is empty");
+            return;
+        }
+
+        for(int i=top; i>=0; i--) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Stack1 s = new Stack1(5);
+
+        s.push(10);
+        s.push(20);
+        s.push(30);
+
+        s.display();
+    }
+}
+
+
+//04
+// Stack - Pop
+
+import java.util.*;
+
+class Stack2 {
+    int top = -1;
+    int arr[];
+
+    Stack2(int n) {
+        arr = new int[n];
+    }
+
+    void push(int d) {
+        if(top == arr.length-1) {
+            System.out.println("Overflow");
+            return;
+        }
+        arr[++top] = d;
+    }
+
+    void pop() {
+        if(top == -1) {
+            System.out.println("Underflow");
+            return;
+        }
+
+        System.out.println("Popped: " + arr[top--]);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Stack2 s = new Stack2(5);
+
+        s.push(10);
+        s.push(20);
+        s.push(30);
+
+        s.pop();
+        s.pop();
+    }
+}
+
+
+//05
+// Stack - Peek
+
+import java.util.*;
+
+class Stack3 {
+    int top = -1;
+    int arr[];
+
+    Stack3(int n) {
+        arr = new int[n];
+    }
+
+    void push(int d) {
+        if(top == arr.length-1) {
+            System.out.println("Overflow");
+            return;
+        }
+        arr[++top] = d;
+    }
+
+    void peek() {
+        if(top == -1) {
+            System.out.println("Underflow");
+            return;
+        }
+
+        System.out.println("Top element: " + arr[top]);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Stack3 s = new Stack3(5);
+
+        s.push(10);
+        s.push(20);
+        s.push(30);
+
+        s.peek();
+    }
+}
+
+
+//06
+// Reverse a String using Stack
+
+import java.util.*;
+
+class Stack4 {
+    int top = -1;
+    char arr[];
+
+    Stack4(int n) {
+        arr = new char[n];
+    }
+
+    void push(char c) {
+        arr[++top] = c;
+    }
+
+    char pop() {
+        return arr[top--];
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+
+        String str = "JAVA";
+
+        Stack4 s = new Stack4(str.length());
+
+        for(int i=0; i<str.length(); i++) {
+            s.push(str.charAt(i));
+        }
+
+        while(s.top != -1) {
+            System.out.print(s.pop());
+        }
+    }
+}
+
+
+
+//==================== QUEUE ====================
+
+//07
+// Queue using Array - Enqueue
+
+import java.util.*;
+
+class Queue1 {
+    int front = 0;
+    int rear = -1;
+    int arr[];
+
+    Queue1(int n) {
+        arr = new int[n];
+    }
+
+    void enqueue(int d) {
+        if(rear == arr.length-1) {
+            System.out.println("Queue is full");
+            return;
+        }
+
+        arr[++rear] = d;
+    }
+
+    void display() {
+        if(front > rear) {
+            System.out.println("Queue is empty");
+            return;
+        }
+
+        for(int i=front; i<=rear; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+
+        Queue1 q = new Queue1(5);
+
+        q.enqueue(10);
+        q.enqueue(20);
+        q.enqueue(30);
+
+        q.display();
+    }
+}
+
+
+//08
+// Queue - Dequeue
+
+import java.util.*;
+
+class Queue2 {
+    int front = 0;
+    int rear = -1;
+    int arr[];
+
+    Queue2(int n) {
+        arr = new int[n];
+    }
+
+    void enqueue(int d) {
+        if(rear == arr.length-1) {
+            System.out.println("Queue is full");
+            return;
+        }
+
+        arr[++rear] = d;
+    }
+
+    void dequeue() {
+        if(front > rear) {
+            System.out.println("Queue is empty");
+            return;
+        }
+
+        System.out.println("Deleted: " + arr[front++]);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+
+        Queue2 q = new Queue2(5);
+
+        q.enqueue(10);
+        q.enqueue(20);
+        q.enqueue(30);
+
+        q.dequeue();
+        q.dequeue();
+    }
+}
+
+
+//09
+// Queue - Peek / Front Element
+
+import java.util.*;
+
+class Queue3 {
+    int front = 0;
+    int rear = -1;
+    int arr[];
+
+    Queue3(int n) {
+        arr = new int[n];
+    }
+
+    void enqueue(int d) {
+        if(rear == arr.length-1) {
+            System.out.println("Queue is full");
+            return;
+        }
+
+        arr[++rear] = d;
+    }
+
+    void peek() {
+        if(front > rear) {
+            System.out.println("Queue is empty");
+            return;
+        }
+
+        System.out.println("Front element: " + arr[front]);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+
+        Queue3 q = new Queue3(5);
+
+        q.enqueue(10);
+        q.enqueue(20);
+        q.enqueue(30);
+
+        q.peek();
+    }
+}
+
+
+//10
+// Queue using Linked List
+
+import java.util.*;
+
+class Node {
+    int data;
+    Node next;
+
+    Node(int d) {
+        data = d;
+        next = null;
+    }
+}
+
+class Queue4 {
+    Node front = null;
+    Node rear = null;
+
+    void enqueue(int d) {
+
+        Node n = new Node(d);
+
+        if(rear == null) {
+            front = rear = n;
+            return;
+        }
+
+        rear.next = n;
+        rear = n;
+    }
+
+    void dequeue() {
+
+        if(front == null) {
+            System.out.println("Queue is empty");
+            return;
+        }
+
+        System.out.println("Deleted: " + front.data);
+
+        front = front.next;
+
+        if(front == null) {
+            rear = null;
+        }
+    }
+
+    void display() {
+
+        if(front == null) {
+            System.out.println("Queue is empty");
+            return;
+        }
+
+        Node temp = front;
+
+        while(temp != null) {
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        }
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+
+        Queue4 q = new Queue4();
+
+        q.enqueue(10);
+        q.enqueue(20);
+        q.enqueue(30);
+
+        q.display();
+
+        System.out.println();
+
+        q.dequeue();
+
+        q.display();
+    }
+}
