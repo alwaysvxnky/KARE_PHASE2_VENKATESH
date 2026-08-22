@@ -1,3 +1,4 @@
+//01
 //create a class Node - Doubly Linked List
 -1
 List is empty
@@ -57,6 +58,8 @@ public class Main
 	    }
 	}
 }
+
+//02
 //sum of elements
 2 4 6 8 -1
 Sum of Elements: 20
@@ -114,7 +117,7 @@ public class Main
 	}
 }
 
-
+//03
 //Maximum Element
 52 73 326 12 3 1 -1
 Maximum Of Given Elements: 326
@@ -174,6 +177,8 @@ public class Main
 	}
 }
 
+
+//04
 //Minimum Element
 3 4 5 6 34 2 -1
 Minimum Of Given Elements: 2
@@ -232,6 +237,8 @@ public class Main
 	}
 }
 
+
+//05
 //Reverse the elements in doubly linked list
 1 2 3 4 5 -1
 Reverse Of Given Elements: 
