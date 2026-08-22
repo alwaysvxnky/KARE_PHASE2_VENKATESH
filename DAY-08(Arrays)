@@ -1,3 +1,4 @@
+//01
 // input             output
 // 5
 // 13 65 78 21 9    13 65 78 21 9
@@ -17,6 +18,7 @@ public class Main
 	}
 }
 
+//02
 //write a java program for printing sumof array elements
 // input             output
 5
@@ -42,7 +44,7 @@ public class Main
 	}
 }
 
-
+//03
 //write a java program to find the odd even element count in te given array
 // input             output
 // 5
@@ -78,6 +80,8 @@ public class Main
 	   System.out.println("Odd Element Count in Array : " +odd);
 	}
 }
+
+/04
 //WRITE A JAVA PROGRAM TO REPLACE A VALUE IN ARRAY
 5
 1 2 3 4 5
@@ -107,6 +111,7 @@ public class Main {
 }
 
 
+//05
 //write a java program to search a element in an array
 6
 12 23 34 45 56 67 
@@ -137,6 +142,8 @@ public class Main {
         }
     }
 
+
+//06
 //write a java program to reverse the elements in a array
 5
 12 3 4 5 6
@@ -158,6 +165,8 @@ public class Main {
     }
 }
 
+
+//07
 //write a java program to reverse the elements in a array  - in place reverse
 5
 1 2 3 4 5
