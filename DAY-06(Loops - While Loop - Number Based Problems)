@@ -1,3 +1,4 @@
+//01
 //WRITE  A JAVA PROGRAM TO COUNT NUMBER OF DIGITS IN THE GIVEN NUMBER 
 //INPUT 
 // n=4862
@@ -18,6 +19,7 @@ public class Main
 	}
 }
 
+//02
 //output
 123454
 Reverse Number : 54321
@@ -40,6 +42,8 @@ public class Main
 	}
 }
 
+
+//03
 //WRITE  A JAVA PROGRAM TO COUNT THE ODD, EVEN DIGITS IN GIVEN NUMBERS
 66652
 Even Numbers Count : 4
@@ -67,7 +71,7 @@ public class Main
 	}
 }
 
-
+//04
 //WRITE  A JAVA PROGRAM TO COUNT THE PRIME DIGITS IN THE GIVEN NUMBER
 7583543
 PRIME DIGITS Count : 5
@@ -92,7 +96,7 @@ public class Main
 	}
 }
 
-
+//05
 //WRITE  A JAVA PROGRAM TO REVERSE THE NUMBER WITHOUT USING RIGHT SIDE FORMATION
 5467567
 7657645
@@ -113,6 +117,7 @@ public class Main
 	}
 }
 
+//06
 //WRITE  A JAVA PROGRAM TO REVERSE THE NUMBER WITHOUT USING RIGHT SIDE FORMATION
 3663
 Palindrom Number
@@ -137,6 +142,8 @@ public class Main
 		}
 }
 
+
+//07
 //write a java program to check the given number is harshed number or not 
 
 //step1: get the user iput n=18
@@ -144,8 +151,6 @@ public class Main
 //step3:to check the given number completely divisible by sum of digits 18%9==0 if it is true prinnt harshed number
 18
 Harshed number
-
-
 
 import java.util.*;
 public class Main{
@@ -167,6 +172,7 @@ public class Main{
     }
 }
 
+//08
 //write a java program to check the given number is neon number or not 
 
 //step1: get the user iput n=9
@@ -195,6 +201,7 @@ public class Main{
     }
 }
 
+//09
 //write a java program to check the given number is perfect number or not 
 
 //step1: get the user input n=6
