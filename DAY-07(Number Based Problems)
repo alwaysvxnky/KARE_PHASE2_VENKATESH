@@ -191,4 +191,168 @@ public class Main
 }
 
 
+// 06 PALINDROME NUMBER
+// Write a Java program to check whether the given number is a palindrome or not.
+// Input: 121
+// Reverse = 121
+// Output: PALINDROME NUMBER
+
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int temp = n;
+        int d, reverse = 0;
+
+        while(n != 0) {
+            d = n % 10;
+            reverse = reverse * 10 + d;
+            n = n / 10;
+        }
+
+        if(temp == reverse) {
+            System.out.println("PALINDROME NUMBER");
+        } else {
+            System.out.println("NOT A PALINDROME NUMBER");
+        }
+    }
+}
+
+
+// 07 NEON NUMBER
+// Write a Java program to check whether the given number is a neon number or not.
+// Input: 9
+// Square = 81
+// Sum of digits = 8 + 1 = 9
+// Output: NEON NUMBER
+
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int temp = n;
+        int square = n * n;
+        int d, sum = 0;
+
+        while(square != 0) {
+            d = square % 10;
+            sum = sum + d;
+            square = square / 10;
+        }
+
+        if(temp == sum) {
+            System.out.println("NEON NUMBER");
+        } else {
+            System.out.println("NOT A NEON NUMBER");
+        }
+    }
+}
+
+
+// 08 PERFECT NUMBER
+// Write a Java program to check whether the given number is a perfect number or not.
+// Input: 28
+// Factors = 1 + 2 + 4 + 7 + 14 = 28
+// Output: PERFECT NUMBER
+
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int sum = 0;
+
+        for(int i = 1; i < n; i++) {
+            if(n % i == 0) {
+                sum = sum + i;
+            }
+        }
+
+        if(sum == n) {
+            System.out.println("PERFECT NUMBER");
+        } else {
+            System.out.println("NOT A PERFECT NUMBER");
+        }
+    }
+}
+
+
+// 09 HARSHAD NUMBER
+// Write a Java program to check whether the given number is a Harshad number or not.
+// Input: 18
+// Sum of digits = 1 + 8 = 9
+// 18 % 9 = 0
+// Output: HARSHAD NUMBER
+
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int temp = n;
+        int d, sum = 0;
+
+        while(n != 0) {
+            d = n % 10;
+            sum = sum + d;
+            n = n / 10;
+        }
+
+        if(temp % sum == 0) {
+            System.out.println("HARSHAD NUMBER");
+        } else {
+            System.out.println("NOT A HARSHAD NUMBER");
+        }
+    }
+}
+
+
+// 10 AUTOMORPHIC NUMBER
+// Write a Java program to check whether the given number is an automorphic number or not.
+// Input: 25
+// Square = 625
+// Last digits of square = 25
+// Output: AUTOMORPHIC NUMBER
+
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int temp = n;
+        int square = n * n;
+        int d1 = 0, d2 = 0;
+
+        while(n != 0) {
+            d1++;
+            n = n / 10;
+        }
+
+        int power = 1;
+        for(int i = 1; i <= d1; i++) {
+            power = power * 10;
+        }
+
+        d2 = square % power;
+
+        if(temp == d2) {
+            System.out.println("AUTOMORPHIC NUMBER");
+        } else {
+            System.out.println("NOT AN AUTOMORPHIC NUMBER");
+        }
+    }
+}
+
 
