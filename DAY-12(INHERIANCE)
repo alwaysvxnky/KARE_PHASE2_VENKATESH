@@ -216,3 +216,87 @@ class Main
         s.bike();
     }
 }
+
+//08
+// super Keyword
+
+class Father
+{
+    void show(){
+        System.out.println("Father");
+    }
+}
+
+class Son extends Father
+{
+    void show(){
+        System.out.println("Son");
+
+        super.show();
+    }
+}
+
+class Main
+{
+    public static void main(String args[]){
+
+        Son s = new Son();
+
+        s.show();
+    }
+}
+
+
+//09
+// Parent Reference and Child Object
+
+class Father
+{
+    void house(){
+        System.out.println("House");
+    }
+}
+
+class Son extends Father
+{
+    void bike(){
+        System.out.println("Bike");
+    }
+}
+
+class Main
+{
+    public static void main(String args[]){
+
+        Father f = new Son();
+
+        f.house();
+        // f.bike(); not accessible
+    }
+}
+
+//10
+// super() Constructor
+
+class Father
+{
+    Father(){
+        System.out.println("Father");
+    }
+}
+
+class Son extends Father
+{
+    Son(){
+        super();
+        System.out.println("Son");
+    }
+}
+
+class Main
+{
+    public static void main(String args[]){
+
+        Son s = new Son();
+    }
+}
