@@ -1,3 +1,4 @@
+//01
 //program for pre and post incriment and decriment.
 import java.util.*;
 public class Main
@@ -19,6 +20,8 @@ public class Main
 //output
 // 30 28 29 29 29
 
+
+//02
 import java.util.*;
 public class Main{
     public static void main(String args[]){
@@ -40,7 +43,7 @@ Output:
 98
 100 98 98 99 97 99
 
-
+//03
 //program for conditional statement - if/else.
 public class Main{
     public static void main(String args[]){
@@ -54,7 +57,7 @@ public class Main{
 Output:
 hi
 
-
+//04
 //program for conditional statement - if/else.
 public class Main{
     public static void main(String args[]){
@@ -69,7 +72,7 @@ public class Main{
 Output:
 -5
 
-
+//05
 //program for conditional statement - if/else.
 public class Main{
     public static void main(String args[]){
@@ -83,7 +86,7 @@ public class Main{
 Output:
 25
 
-
+//06
 //program for conditional statement - if/else with error.
 public class Main{
     public static void main(String args[]){
@@ -101,6 +104,7 @@ Main.java:7: error: 'else' without 'if'
         ^
 1 error
 
+//07
 //write a java program to print whether a number is even or odd
 import java.util.*;
 public class Main
@@ -115,6 +119,8 @@ public class Main
 	}
 }
 
+
+//08
 //whether  2 numbers are equal or not
 
 import java.util.*;
@@ -132,6 +138,8 @@ public class Main
 	}
 }
 
+
+//09
 //write a java program to check the given person ages eligible to vote or not
 import java.util.*;
 public class Main
@@ -146,6 +154,8 @@ public class Main
 	}
 }
 
+
+//10
 //write a java program to check the given person ages eligible to vote or not
 //input     output
 //9         divisble by 3
@@ -186,6 +196,7 @@ public class Main
 }
 
 
+//11
 //write a java program to check which of the 3 numbers is smallest
 //input     output
 //2 1 4         1 is smallest
@@ -209,6 +220,8 @@ public class Main
 	}
 }
 
+
+//12
 /*write a java program 
 
 */
@@ -228,6 +241,7 @@ public class Main
 }
 
 
+//13
 /*write a java program to check the given is leep year or not
 
 */
@@ -244,6 +258,7 @@ public class Main
 	}
 }
 
+//14
 /*write a java program to check the given railway time is valid or not
 
 */
