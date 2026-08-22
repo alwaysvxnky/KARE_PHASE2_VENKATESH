@@ -1,3 +1,4 @@
+//01
 //Circular Singly Linked List
 1 2 3 4 -1
 1 2 3 4 
@@ -50,6 +51,7 @@ public class Main {
     }
 }
 
+//02
 //Circular Doubly Linked List
 1 2 3 4 -1
 1 2 3 4 
@@ -103,6 +105,8 @@ public class Main
 	}
 }
 
+
+//03
 //Sum of Elements in  Circular Doubly Linked List
 1 2 3 4 5 -1
 Sum of the elements: 15
@@ -160,6 +164,7 @@ public class Main
 }
 
 
+//04
 //Sum of Elements in  Circular Singly Linked List
 1 2 3 4 6 -1
 Sum of the elements: 16
@@ -215,6 +220,7 @@ public class Main
 }
 
 
+//05
 //Maxmimum Element in Cricular Singly Linked List
 import java.util.*;
 class Node {
@@ -265,6 +271,418 @@ public class Main {
                 temp = temp.next;
         } while (temp != first);
         System.out.println("Maximum element: "+max);
+    }
+}
+
+//06
+//Minimum Element in Circular Singly Linked List
+
+import java.util.*;
+
+class Node {
+    int data;
+    Node next;
+
+    Node(int d) {
+        data = d;
+        next = null;
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner obj = new Scanner(System.in);
+        Main m = new Main();
+
+        int d = obj.nextInt();
+
+        while(d != -1) {
+            m.insert(d);
+            d = obj.nextInt();
+        }
+
+        m.minimum();
+    }
+
+    Node first = null;
+
+    void insert(int d) {
+
+        Node n = new Node(d);
+
+        if(first == null) {
+            first = n;
+            n.next = first;
+            return;
+        }
+
+        Node temp = first;
+
+        while(temp.next != first) {
+            temp = temp.next;
+        }
+
+        temp.next = n;
+        n.next = first;
+    }
+
+    void minimum() {
+
+        if(first == null) {
+            System.out.println("List is empty");
+            return;
+        }
+
+        int min = Integer.MAX_VALUE;
+
+        Node temp = first;
+
+        do {
+
+            if(temp.data < min) {
+                min = temp.data;
+            }
+
+            temp = temp.next;
+
+        } while(temp != first);
+
+        System.out.println("Minimum element: " + min);
+    }
+}
+
+
+//07
+//Search Element in Circular Singly Linked List
+
+import java.util.*;
+
+class Node {
+    int data;
+    Node next;
+
+    Node(int d) {
+        data = d;
+        next = null;
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner obj = new Scanner(System.in);
+        Main m = new Main();
+
+        int d = obj.nextInt();
+
+        while(d != -1) {
+            m.insert(d);
+            d = obj.nextInt();
+        }
+
+        m.search();
+    }
+
+    Node first = null;
+
+    void insert(int d) {
+
+        Node n = new Node(d);
+
+        if(first == null) {
+            first = n;
+            n.next = first;
+            return;
+        }
+
+        Node temp = first;
+
+        while(temp.next != first) {
+            temp = temp.next;
+        }
+
+        temp.next = n;
+        n.next = first;
+    }
+
+    void search() {
+
+        Scanner obj = new Scanner(System.in);
+
+        int s = obj.nextInt();
+        int flag = 0;
+
+        if(first == null) {
+            System.out.println("List is empty");
+            return;
+        }
+
+        Node temp = first;
+
+        do {
+
+            if(temp.data == s) {
+                System.out.println("Element found");
+                flag = 1;
+                break;
+            }
+
+            temp = temp.next;
+
+        } while(temp != first);
+
+        if(flag == 0) {
+            System.out.println("Element not found");
+        }
+    }
+}
+
+
+//08
+//Count Nodes in Circular Singly Linked List
+
+import java.util.*;
+
+class Node {
+    int data;
+    Node next;
+
+    Node(int d) {
+        data = d;
+        next = null;
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner obj = new Scanner(System.in);
+        Main m = new Main();
+
+        int d = obj.nextInt();
+
+        while(d != -1) {
+            m.insert(d);
+            d = obj.nextInt();
+        }
+
+        m.count();
+    }
+
+    Node first = null;
+
+    void insert(int d) {
+
+        Node n = new Node(d);
+
+        if(first == null) {
+            first = n;
+            n.next = first;
+            return;
+        }
+
+        Node temp = first;
+
+        while(temp.next != first) {
+            temp = temp.next;
+        }
+
+        temp.next = n;
+        n.next = first;
+    }
+
+    void count() {
+
+        if(first == null) {
+            System.out.println("List is empty");
+            return;
+        }
+
+        int count = 0;
+
+        Node temp = first;
+
+        do {
+
+            count++;
+            temp = temp.next;
+
+        } while(temp != first);
+
+        System.out.println("Number of nodes: " + count);
+    }
+}
+
+
+//09
+//Maximum Element in Circular Doubly Linked List
+
+import java.util.*;
+
+class Node {
+
+    int data;
+    Node next;
+    Node prev;
+
+    Node(int d) {
+        data = d;
+        next = null;
+        prev = null;
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner obj = new Scanner(System.in);
+        Main m = new Main();
+
+        int d = obj.nextInt();
+
+        while(d != -1) {
+            m.insert(d);
+            d = obj.nextInt();
+        }
+
+        m.maximum();
+    }
+
+    Node first = null;
+
+    void insert(int d) {
+
+        Node n = new Node(d);
+
+        if(first == null) {
+
+            first = n;
+            first.next = first;
+            first.prev = first;
+
+        } else {
+
+            Node last = first.prev;
+
+            last.next = n;
+            n.prev = last;
+
+            n.next = first;
+            first.prev = n;
+        }
+    }
+
+    void maximum() {
+
+        if(first == null) {
+            System.out.println("List is empty");
+            return;
+        }
+
+        int max = Integer.MIN_VALUE;
+
+        Node temp = first;
+
+        do {
+
+            if(temp.data > max) {
+                max = temp.data;
+            }
+
+            temp = temp.next;
+
+        } while(temp != first);
+
+        System.out.println("Maximum element: " + max);
+    }
+}
+
+//10
+//Minimum Element in Circular Doubly Linked List
+
+import java.util.*;
+
+class Node {
+
+    int data;
+    Node next;
+    Node prev;
+
+    Node(int d) {
+        data = d;
+        next = null;
+        prev = null;
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner obj = new Scanner(System.in);
+        Main m = new Main();
+
+        int d = obj.nextInt();
+
+        while(d != -1) {
+            m.insert(d);
+            d = obj.nextInt();
+        }
+
+        m.minimum();
+    }
+
+    Node first = null;
+
+    void insert(int d) {
+
+        Node n = new Node(d);
+
+        if(first == null) {
+
+            first = n;
+            first.next = first;
+            first.prev = first;
+
+        } else {
+
+            Node last = first.prev;
+
+            last.next = n;
+            n.prev = last;
+
+            n.next = first;
+            first.prev = n;
+        }
+    }
+
+    void minimum() {
+
+        if(first == null) {
+            System.out.println("List is empty");
+            return;
+        }
+
+        int min = Integer.MAX_VALUE;
+
+        Node temp = first;
+
+        do {
+
+            if(temp.data < min) {
+                min = temp.data;
+            }
+
+            temp = temp.next;
+
+        } while(temp != first);
+
+        System.out.println("Minimum element: " + min);
     }
 }
 
