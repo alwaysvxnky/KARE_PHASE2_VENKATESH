@@ -1,3 +1,5 @@
+
+//01
 //program to create a ArrayList.
 import java.util.*;
 public class Main
@@ -17,7 +19,7 @@ public class Main
 Output:
 [10, 20, 30, 2.5, G, Chandu]
 
-
+//02
 //program to create a ArrayList with Integer datatype
 import java.util.*;
 public class Main
@@ -34,7 +36,7 @@ public class Main
 Output:
 [10, 20, 30]
 
-
+//03
 //program to create a ArrayList by taking the input from the user.
 import java.util.*;
 public class Main
@@ -55,7 +57,7 @@ Output:
 1 2 3 4 5
 [1, 2, 3, 4, 5]
 
-
+//04
 //program for LinkedList
 import java.util.*;
 public class Main
@@ -110,3 +112,187 @@ true
 true
 -1
 []
+
+
+
+//05
+//program to add, remove and search elements in ArrayList.
+
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args) {
+
+        ArrayList<Integer> obj = new ArrayList<>();
+
+        obj.add(10);
+        obj.add(20);
+        obj.add(30);
+        obj.add(40);
+
+        System.out.println(obj);
+
+        obj.add(1,100);
+        System.out.println(obj);
+
+        obj.remove(2);
+        System.out.println(obj);
+
+        System.out.println(obj.contains(30));
+        System.out.println(obj.size());
+    }
+}
+
+Output:
+[10, 20, 30, 40]
+[10, 100, 20, 30, 40]
+[10, 100, 30, 40]
+true
+4
+
+
+//06
+//program to get and set elements in ArrayList.
+
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args) {
+
+        ArrayList<String> obj = new ArrayList<>();
+
+        obj.add("Java");
+        obj.add("Python");
+        obj.add("C");
+        obj.add("HTML");
+
+        System.out.println(obj.get(1));
+
+        obj.set(2,"C++");
+
+        System.out.println(obj);
+    }
+}
+
+Output:
+Python
+[Java, Python, C++, HTML]
+
+
+//07
+//program to iterate ArrayList using for loop.
+
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args) {
+
+        ArrayList<Integer> obj = new ArrayList<>();
+
+        obj.add(10);
+        obj.add(20);
+        obj.add(30);
+        obj.add(40);
+        obj.add(50);
+
+        for(int i=0;i<obj.size();i++) {
+            System.out.print(obj.get(i)+" ");
+        }
+    }
+}
+
+Output:
+10 20 30 40 50
+
+
+//08
+//program to find maximum and minimum element in ArrayList.
+
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args) {
+
+        ArrayList<Integer> obj = new ArrayList<>();
+
+        obj.add(10);
+        obj.add(50);
+        obj.add(20);
+        obj.add(5);
+        obj.add(30);
+
+        int max = Collections.max(obj);
+        int min = Collections.min(obj);
+
+        System.out.println("Maximum: "+max);
+        System.out.println("Minimum: "+min);
+    }
+}
+
+Output:
+Maximum: 50
+Minimum: 5
+
+
+//09
+//program to sort an ArrayList.
+
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args) {
+
+        ArrayList<Integer> obj = new ArrayList<>();
+
+        obj.add(50);
+        obj.add(10);
+        obj.add(40);
+        obj.add(20);
+        obj.add(30);
+
+        System.out.println("Before sorting: "+obj);
+
+        Collections.sort(obj);
+
+        System.out.println("After sorting: "+obj);
+    }
+}
+
+Output:
+Before sorting: [50, 10, 40, 20, 30]
+After sorting: [10, 20, 30, 40, 50]
+
+
+//10
+//program to reverse an ArrayList.
+
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args) {
+
+        ArrayList<Integer> obj = new ArrayList<>();
+
+        obj.add(10);
+        obj.add(20);
+        obj.add(30);
+        obj.add(40);
+        obj.add(50);
+
+        System.out.println("Before reverse: "+obj);
+
+        Collections.reverse(obj);
+
+        System.out.println("After reverse: "+obj);
+    }
+}
+
+Output:
+Before reverse: [10, 20, 30, 40, 50]
+After reverse: [50, 40, 30, 20, 10]
