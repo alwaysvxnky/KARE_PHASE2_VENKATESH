@@ -198,5 +198,112 @@ public class Main {
 }
 
 
+//08
+// FIND THE SECOND LARGEST ELEMENT
+// Input:
+// 5
+// 10 50 30 40 20
+// Output:
+// Second largest = 40
+
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+
+        for(int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        int largest = arr[0];
+        int second = arr[0];
+
+        for(int i = 1; i < n; i++) {
+            if(arr[i] > largest) {
+                second = largest;
+                largest = arr[i];
+            } else if(arr[i] > second && arr[i] != largest) {
+                second = arr[i];
+            }
+        }
+
+        System.out.println("Second largest = " + second);
+    }
+}
+
+//09
+// FIND THE SMALLEST ELEMENT IN THE ARRAY
+// Input:
+// 5
+// 13 34 54 67 22
+// Output:
+// Smallest element = 13
+
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+
+        for(int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        int min = arr[0];
+
+        for(int i = 1; i < n; i++) {
+            if(arr[i] < min) {
+                min = arr[i];
+            }
+        }
+
+        System.out.println("Smallest element = " + min);
+    }
+}
+
+
+//10
+// FIND THE LARGEST ELEMENT IN THE ARRAY
+// Input:
+// 5
+// 13 34 54 67 22
+// Output:
+// Largest element = 67
+
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+
+        for(int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        int max = arr[0];
+
+        for(int i = 1; i < n; i++) {
+            if(arr[i] > max) {
+                max = arr[i];
+            }
+        }
+
+        System.out.println("Largest element = " + max);
+    }
+}
+
+
+
+
 
 
