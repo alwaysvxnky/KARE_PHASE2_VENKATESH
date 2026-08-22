@@ -1,3 +1,4 @@
+//01
 //write a java to create and display a 2D array
 Enter no of rows : 
 2
@@ -34,6 +35,8 @@ public class Main {
         
     }
 }
+
+//02
 //Write a java program to get sum of array elements
 Enter no of rows : 
 2
@@ -81,6 +84,7 @@ public class Main {
     }
 }
 
+//03
 //write the java programe to print diagonal elements in 2d array
 3
 Enter array elements
@@ -119,6 +123,7 @@ public class Main {
     }
 }
 
+//04
 //write the java programe to print transpose elements in Matrix in 2d array
 2
 3
@@ -165,6 +170,7 @@ public class Main {
 }
 
 
+//05
 //write the java programe to print length of string without using inbuilt function/method
 venkatesh
 9
@@ -181,7 +187,7 @@ public class Main {
     }
 }
 
-
+//06
 //write the java programe to print number of words in given string
 venky loves playing chess
 4
@@ -199,7 +205,7 @@ public class Main {
     }
 }
 
-
+//07
 //write the java programe to find the vowels count in the given string
 venkatesh is studying java programming
 11
@@ -224,6 +230,8 @@ public class Main {
     }
 }
 
+
+//08
 //write the java programe to find the vowels count in the given string
 yknev
 venky
@@ -248,6 +256,8 @@ public class Main {
     }
 }
 
+
+//09
 //OUTPUT
 APPLE
 Unique count elements : 3
@@ -274,6 +284,7 @@ public class Main {
         }
     }
 
+//10
 AAPPLE
 Repeated element : A
 Repeated element : P
@@ -299,6 +310,7 @@ public class Main {
         }
     }
 
+//11
 apple
 Repeated element : 1 a
 Repeated element : 1 e
