@@ -1,4 +1,4 @@
-
+//01
 1 2 3 4 5 -1
 1 2 3 4 5 
 import java.util.*;
@@ -49,6 +49,8 @@ public class Main
 	}
 }
 
+
+//02
 1 2 3 4 5 -1
 1 2 3 4 5 
 Sum of elements: 15
@@ -103,7 +105,7 @@ public class Main
 	}
 }
 
-
+//03
 1 2 4 5 6 -1
 Maximum Element  6
 import java.util.*;
@@ -158,6 +160,8 @@ public class Main
 	}
 }
 
+
+//04
 1  3  4 6 -1
 Minimum Element  1
 import java.util.*;
@@ -211,6 +215,7 @@ public class Main
 	}
 }
 
+//05
 1 2 3 6 7 -1
 6
 Element found
@@ -271,7 +276,7 @@ public class Main
 	}
 }
 
-
+//06
 1 2 3 670 23 2 -1
 1 2 2 3 23 670 
 import java.util.*;
@@ -336,4 +341,315 @@ public class Main
 	        temp = temp.next;
 	    }
 	}
+}
+
+//07
+// Count Number of Nodes
+
+import java.util.*;
+
+class Node{
+    int data;
+    Node next;
+
+    Node(int d){
+        this.data = d;
+        this.next = null;
+    }
+}
+
+public class Main
+{
+    Node first;
+
+    public static void main(String[] args) {
+
+        Scanner obj = new Scanner(System.in);
+        Main m = new Main();
+
+        int d = obj.nextInt();
+
+        while(d != -1){
+            m.insert(d);
+            d = obj.nextInt();
+        }
+
+        m.count();
+    }
+
+    void insert(int d){
+
+        Node n = new Node(d);
+
+        if(first == null){
+            first = n;
+            return;
+        }
+
+        Node temp = first;
+
+        while(temp.next != null){
+            temp = temp.next;
+        }
+
+        temp.next = n;
+    }
+
+    void count(){
+
+        if(first == null){
+            System.out.println("List is empty");
+            return;
+        }
+
+        int count = 0;
+        Node temp = first;
+
+        while(temp != null){
+            count++;
+            temp = temp.next;
+        }
+
+        System.out.print("Number of nodes: " + count);
+    }
+}
+
+//08
+// Reverse Linked List
+
+import java.util.*;
+
+class Node{
+    int data;
+    Node next;
+
+    Node(int d){
+        this.data = d;
+        this.next = null;
+    }
+}
+
+public class Main
+{
+    Node first;
+
+    public static void main(String[] args) {
+
+        Scanner obj = new Scanner(System.in);
+        Main m = new Main();
+
+        int d = obj.nextInt();
+
+        while(d != -1){
+            m.insert(d);
+            d = obj.nextInt();
+        }
+
+        m.reverse();
+        m.display();
+    }
+
+    void insert(int d){
+
+        Node n = new Node(d);
+
+        if(first == null){
+            first = n;
+            return;
+        }
+
+        Node temp = first;
+
+        while(temp.next != null){
+            temp = temp.next;
+        }
+
+        temp.next = n;
+    }
+
+    void reverse(){
+
+        Node prev = null;
+        Node curr = first;
+
+        while(curr != null){
+
+            Node next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+
+        first = prev;
+    }
+
+    void display(){
+
+        Node temp = first;
+
+        while(temp != null){
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        }
+    }
+}
+
+//09
+// Find Second Largest Element
+
+import java.util.*;
+
+class Node{
+    int data;
+    Node next;
+
+    Node(int d){
+        this.data = d;
+        this.next = null;
+    }
+}
+
+public class Main
+{
+    Node first;
+
+    public static void main(String[] args) {
+
+        Scanner obj = new Scanner(System.in);
+        Main m = new Main();
+
+        int d = obj.nextInt();
+
+        while(d != -1){
+            m.insert(d);
+            d = obj.nextInt();
+        }
+
+        m.secondLargest();
+    }
+
+    void insert(int d){
+
+        Node n = new Node(d);
+
+        if(first == null){
+            first = n;
+            return;
+        }
+
+        Node temp = first;
+
+        while(temp.next != null){
+            temp = temp.next;
+        }
+
+        temp.next = n;
+    }
+
+    void secondLargest(){
+
+        if(first == null){
+            System.out.println("List is empty");
+            return;
+        }
+
+        int largest = Integer.MIN_VALUE;
+        int second = Integer.MIN_VALUE;
+
+        Node temp = first;
+
+        while(temp != null){
+
+            if(temp.data > largest){
+                second = largest;
+                largest = temp.data;
+            }
+            else if(temp.data > second && temp.data != largest){
+                second = temp.data;
+            }
+
+            temp = temp.next;
+        }
+
+        System.out.print("Second Largest Element: " + second);
+    }
+}
+
+//10
+// Count Even and Odd Elements
+
+import java.util.*;
+
+class Node{
+    int data;
+    Node next;
+
+    Node(int d){
+        this.data = d;
+        this.next = null;
+    }
+}
+
+public class Main
+{
+    Node first;
+
+    public static void main(String[] args) {
+
+        Scanner obj = new Scanner(System.in);
+        Main m = new Main();
+
+        int d = obj.nextInt();
+
+        while(d != -1){
+            m.insert(d);
+            d = obj.nextInt();
+        }
+
+        m.countEvenOdd();
+    }
+
+    void insert(int d){
+
+        Node n = new Node(d);
+
+        if(first == null){
+            first = n;
+            return;
+        }
+
+        Node temp = first;
+
+        while(temp.next != null){
+            temp = temp.next;
+        }
+
+        temp.next = n;
+    }
+
+    void countEvenOdd(){
+
+        if(first == null){
+            System.out.println("List is empty");
+            return;
+        }
+
+        int even = 0;
+        int odd = 0;
+
+        Node temp = first;
+
+        while(temp != null){
+
+            if(temp.data % 2 == 0)
+                even++;
+            else
+                odd++;
+
+            temp = temp.next;
+        }
+
+        System.out.println("Even: " + even);
+        System.out.println("Odd: " + odd);
+    }
 }
