@@ -92,4 +92,46 @@ class Main{
     }
 }
 
+// 8) Print a string with double quotes
+public class Main
+{
+    public static void main(String[] args) {
+        System.out.println("Welcome to \"Java Programming\"");
+    }
+}
 
+
+// 9) Take a String input from user and print it
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
+        System.out.println(s);
+    }
+}
+
+
+// 10) Take an integer input and print it with a message
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        System.out.println("The number is :" + n);
+    }
+}
+
+
+// 11) Take a double input and print it with 2 decimal places
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double d = sc.nextDouble();
+        System.out.printf("%.2f", d);
+    }
+}
