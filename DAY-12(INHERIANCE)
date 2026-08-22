@@ -1,3 +1,4 @@
+//01
 class Father
 {
     void gen2(){
@@ -21,6 +22,7 @@ class Main{
 } 
 
 
+//02
 class GrandFather{
     void gen1(){
         System.out.println("Cash/Money");
@@ -50,3 +52,167 @@ class Main{
         s.gen3();
     }
 } 
+
+//03
+// Hierarchical Inheritance
+
+class Father
+{
+    void house(){
+        System.out.println("House");
+    }
+}
+
+class Son extends Father
+{
+    void bike(){
+        System.out.println("Bike");
+    }
+}
+
+class Daughter extends Father
+{
+    void car(){
+        System.out.println("Car");
+    }
+}
+
+class Main
+{
+    public static void main(String args[]){
+
+        Son s = new Son();
+        Daughter d = new Daughter();
+
+        s.house();
+        s.bike();
+
+        d.house();
+        d.car();
+    }
+}
+
+//04
+// Method Overriding
+
+class Father
+{
+    void work(){
+        System.out.println("Father is working");
+    }
+}
+
+class Son extends Father
+{
+    void work(){
+        System.out.println("Son is working");
+    }
+}
+
+class Main
+{
+    public static void main(String args[]){
+
+        Father f = new Father();
+        Son s = new Son();
+
+        f.work();
+        s.work();
+    }
+}
+
+//05
+// Inheritance with Variables
+
+class Father
+{
+    int money = 10000;
+}
+
+class Son extends Father
+{
+    int bike = 50000;
+}
+
+class Main
+{
+    public static void main(String args[]){
+
+        Son s = new Son();
+
+        System.out.println("Father Money : " + s.money);
+        System.out.println("Son Bike : " + s.bike);
+    }
+}
+
+//06
+// Inheritance with Constructor
+
+class Father
+{
+    Father(){
+        System.out.println("Father Constructor");
+    }
+
+    void house(){
+        System.out.println("Father House");
+    }
+}
+
+class Son extends Father
+{
+    Son(){
+        System.out.println("Son Constructor");
+    }
+
+    void bike(){
+        System.out.println("Son Bike");
+    }
+}
+
+class Main
+{
+    public static void main(String args[]){
+
+        Son s = new Son();
+
+        s.house();
+        s.bike();
+    }
+}
+
+//07
+// Multilevel Inheritance
+
+class GrandFather
+{
+    void land(){
+        System.out.println("GrandFather Land");
+    }
+}
+
+class Father extends GrandFather
+{
+    void house(){
+        System.out.println("Father House");
+    }
+}
+
+class Son extends Father
+{
+    void bike(){
+        System.out.println("Son Bike");
+    }
+}
+
+class Main
+{
+    public static void main(String args[]){
+
+        Son s = new Son();
+
+        s.land();
+        s.house();
+        s.bike();
+    }
+}
