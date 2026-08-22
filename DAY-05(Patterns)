@@ -1,3 +1,4 @@
+//01
 OUTPUT
 
 5
@@ -27,6 +28,7 @@ public class Main
 }
 }
 
+//02
 output
 5
  * * * * * 
@@ -61,6 +63,8 @@ public class Main
 	}
 }
 
+
+//03
 //OUTPUT
 //5
 // 10101
@@ -87,6 +91,7 @@ public class Main
 	}
 }
 
+//04
 //OUTPUT
 5
 *****
@@ -115,6 +120,8 @@ public class Main
     }
 }
 
+
+//05
 //OUTPUT
 5
 CCCCC
@@ -142,6 +149,8 @@ public class Main
 	}
 }
 
+
+//06
 //OUTPUT
 5
 EEEEE
@@ -170,6 +179,7 @@ public class Main
 }
 
 
+//07
 //output
 5
 N   N
@@ -197,6 +207,8 @@ public class Main
 	}
 }
 
+
+//08
 //output
 5
 M   M
