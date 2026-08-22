@@ -1,3 +1,4 @@
+//01
 //program to print matrix of undirected graphs.
 import java.util.*;
 public class Main
@@ -37,6 +38,7 @@ Output:
 0 0 0 1 0 
 
 
+//02
 import java.util.*;
 class Main {
     public static void main(String[] args) {
@@ -60,6 +62,7 @@ class Main {
 }
 
 
+//03
 import java.util.*;
 
 class Main {
@@ -86,6 +89,8 @@ class Main {
     }
 }
 
+
+//04
 import java.util.*;
 
 class Main {
@@ -120,6 +125,8 @@ class Main {
 }
 
 
+
+//04
 import java.util.*;
 
 public class Main {
@@ -159,5 +166,300 @@ public class Main {
         }
         bfs(0, V);
         obj.close();
+    }
+}
+
+
+//05
+// Program to find degree of each vertex in an undirected graph
+
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+
+        Scanner obj = new Scanner(System.in);
+
+        int V = obj.nextInt();
+        int E = obj.nextInt();
+
+        int[][] graph = new int[V][V];
+
+        for(int i = 0; i < E; i++) {
+
+            int u = obj.nextInt();
+            int v = obj.nextInt();
+
+            graph[u][v] = 1;
+            graph[v][u] = 1;
+        }
+
+        for(int i = 0; i < V; i++) {
+
+            int degree = 0;
+
+            for(int j = 0; j < V; j++) {
+
+                if(graph[i][j] == 1) {
+                    degree++;
+                }
+            }
+
+            System.out.println("Degree of " + i + ": " + degree);
+        }
+    }
+}
+
+
+//06
+// Check whether an edge exists between two vertices
+
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+
+        Scanner obj = new Scanner(System.in);
+
+        int V = obj.nextInt();
+        int E = obj.nextInt();
+
+        int[][] graph = new int[V][V];
+
+        for(int i = 0; i < E; i++) {
+
+            int u = obj.nextInt();
+            int v = obj.nextInt();
+
+            graph[u][v] = 1;
+            graph[v][u] = 1;
+        }
+
+        int u = obj.nextInt();
+        int v = obj.nextInt();
+
+        if(graph[u][v] == 1) {
+            System.out.println("Edge exists");
+        }
+        else {
+            System.out.println("Edge does not exist");
+        }
+    }
+}
+
+
+//07
+// Count total edges in an undirected graph
+
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+
+        Scanner obj = new Scanner(System.in);
+
+        int V = obj.nextInt();
+        int E = obj.nextInt();
+
+        int[][] graph = new int[V][V];
+
+        for(int i = 0; i < E; i++) {
+
+            int u = obj.nextInt();
+            int v = obj.nextInt();
+
+            graph[u][v] = 1;
+            graph[v][u] = 1;
+        }
+
+        int count = 0;
+
+        for(int i = 0; i < V; i++) {
+
+            for(int j = 0; j < V; j++) {
+
+                if(graph[i][j] == 1) {
+                    count++;
+                }
+            }
+        }
+
+        System.out.println("Number of edges: " + count / 2);
+    }
+}
+
+
+//08
+// DFS Traversal of Graph
+
+import java.util.*;
+
+class Main {
+
+    static int[][] graph;
+    static boolean[] visited;
+
+    static void dfs(int v, int V) {
+
+        visited[v] = true;
+
+        System.out.print(v + " ");
+
+        for(int i = 0; i < V; i++) {
+
+            if(graph[v][i] == 1 && !visited[i]) {
+                dfs(i, V);
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+
+        Scanner obj = new Scanner(System.in);
+
+        int V = obj.nextInt();
+        int E = obj.nextInt();
+
+        graph = new int[V][V];
+        visited = new boolean[V];
+
+        for(int i = 0; i < E; i++) {
+
+            int u = obj.nextInt();
+            int v = obj.nextInt();
+
+            graph[u][v] = 1;
+            graph[v][u] = 1;
+        }
+
+        int start = obj.nextInt();
+
+        dfs(start, V);
+    }
+}
+
+
+//09
+// BFS Traversal of Graph
+
+import java.util.*;
+
+class Main {
+
+    static int[][] graph;
+    static boolean[] visited;
+    static int[] queue;
+
+    static void bfs(int start, int V) {
+
+        int front = 0;
+        int rear = 0;
+
+        visited[start] = true;
+        queue[rear++] = start;
+
+        while(front < rear) {
+
+            int v = queue[front++];
+
+            System.out.print(v + " ");
+
+            for(int i = 0; i < V; i++) {
+
+                if(graph[v][i] == 1 && !visited[i]) {
+
+                    visited[i] = true;
+                    queue[rear++] = i;
+                }
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+
+        Scanner obj = new Scanner(System.in);
+
+        int V = obj.nextInt();
+        int E = obj.nextInt();
+
+        graph = new int[V][V];
+        visited = new boolean[V];
+        queue = new int[V];
+
+        for(int i = 0; i < E; i++) {
+
+            int u = obj.nextInt();
+            int v = obj.nextInt();
+
+            graph[u][v] = 1;
+            graph[v][u] = 1;
+        }
+
+        int start = obj.nextInt();
+
+        bfs(start, V);
+    }
+}
+
+
+//10
+// Check whether graph is connected
+
+import java.util.*;
+
+class Main {
+
+    static int[][] graph;
+    static boolean[] visited;
+
+    static void dfs(int v, int V) {
+
+        visited[v] = true;
+
+        for(int i = 0; i < V; i++) {
+
+            if(graph[v][i] == 1 && !visited[i]) {
+                dfs(i, V);
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+
+        Scanner obj = new Scanner(System.in);
+
+        int V = obj.nextInt();
+        int E = obj.nextInt();
+
+        graph = new int[V][V];
+        visited = new boolean[V];
+
+        for(int i = 0; i < E; i++) {
+
+            int u = obj.nextInt();
+            int v = obj.nextInt();
+
+            graph[u][v] = 1;
+            graph[v][u] = 1;
+        }
+
+        dfs(0, V);
+
+        int flag = 1;
+
+        for(int i = 0; i < V; i++) {
+
+            if(!visited[i]) {
+                flag = 0;
+                break;
+            }
+        }
+
+        if(flag == 1) {
+            System.out.println("Graph is connected");
+        }
+        else {
+            System.out.println("Graph is not connected");
+        }
     }
 }
