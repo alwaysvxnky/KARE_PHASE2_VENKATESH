@@ -1,3 +1,4 @@
+//01
 // write a java program to find nth term of fibinocci series by using recursion
 6
 8
@@ -20,6 +21,7 @@ public class Main
 }
 
 
+//02
 //NO argument Constructor
 import java.util.*;
 public class Main {
@@ -31,6 +33,9 @@ public class Main {
 
     }
 }
+
+
+//03
 // argument Constructor
 import java.util.*;
 public class Main {
@@ -46,7 +51,7 @@ public class Main {
 }
 
 
-
+//04
 //output
 2 ABC
 
@@ -71,6 +76,8 @@ class Student{
     }
 }
 
+
+//05
 //output
 10 20  30
 30
@@ -96,6 +103,8 @@ class Main{
     } 
 }
 
+
+//06
 //output
 20 6.66 v
 20 6.66
@@ -122,6 +131,7 @@ class Main{
 }
 
 
+//07
 //output
 30 6.666
 30 6.666
@@ -148,6 +158,7 @@ class Main{
 }
 
 
+//08
 //output
 4 6.66 v 3.3333
 4 6.66
@@ -183,4 +194,84 @@ class Main{
         m.print(d,c);
         
     } 
+}
+
+
+//09
+// Parameterized Constructor
+// input
+// 10
+// ABC
+// output
+// 10 ABC
+
+import java.util.*;
+
+class Main {
+    int rollno;
+    String name;
+
+    Main(int r, String n){
+        rollno = r;
+        name = n;
+    }
+
+    void display(){
+        System.out.println(rollno + " " + name);
+    }
+
+    public static void main(String args[]){
+
+        Scanner sc = new Scanner(System.in);
+
+        int r = sc.nextInt();
+        String n = sc.next();
+
+        Main obj = new Main(r, n);
+
+        obj.display();
+    }
+}
+
+
+//10
+// Method Overloading
+// input
+// 10 20 30
+// output
+// 30
+// 60
+// 600
+
+import java.util.*;
+
+class Main {
+
+    void add(int a, int b){
+        System.out.println(a + b);
+    }
+
+    void add(int a, int b, int c){
+        System.out.println(a + b + c);
+    }
+
+    void add(int a, int b, int c, int d){
+        System.out.println(a + b + c + d);
+    }
+
+    public static void main(String args[]){
+
+        Scanner sc = new Scanner(System.in);
+
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        int d = sc.nextInt();
+
+        Main m = new Main();
+
+        m.add(a, b);
+        m.add(a, b, c);
+        m.add(a, b, c, d);
+    }
 }
